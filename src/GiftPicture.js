@@ -1,11 +1,21 @@
-
+import { useDrag } from "react-dnd";
 
 function GiftPicture({ url, id }) {
-
+    const [{ isDragging }, drag] = useDrag(() => ({
+        type: "image",
+        item: { id: id },
+        collect: (monitor) => ({
+            isDragging: !!monitor.isDragging()
+        })
+    }));
 
     return (
         <div>
-            <img src={url} width="150px" />
+            <img
+                className="gift-pictures"
+                src={url}
+                ref={drag}
+            />
         </div>
     )
 }

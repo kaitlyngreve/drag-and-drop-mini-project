@@ -23,10 +23,28 @@ const GiftPictures = [
 function DragDrop() {
     const [tree, setTree] = useState([]);
 
+    const [{ isOver }, drop] = useDrop(() => ({
+        accept: "image",
+        drop: (item) => addImageUnderTree(item.id),
+        collect: (monitor) => ({
+            isOver: !!monitor.isOver()
+        })
+    }));
+
+    const addImageUnderTree = (id) => {
+        const giftPictureList = GiftPictures.filter((giftPicture) => id === giftPicture.id);
+        setTree((tree) => [...tree, giftPictureList[0]]);
+    }
+
     return (
         <div>
             <div className='Gifts'>
                 {GiftPictures.map((giftPicture) => {
+                    return <GiftPicture url={giftPicture.url} id={giftPicture.id} />;
+                })}
+            </div>
+            <div className="Tree" ref={drop}>
+                {tree.map((giftPicture) => {
                     return <GiftPicture url={giftPicture.url} id={giftPicture.id} />;
                 })}
             </div>

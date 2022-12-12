@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gift-pictures {
+  width: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.Gifts {
+  display: flex;
+  flex-direction: row;
+}
+
+.Tree {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 500px;
+  padding: 15px;
+  margin: auto;
+  border: 2px solid green;
+}
