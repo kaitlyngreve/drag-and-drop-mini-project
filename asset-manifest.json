@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/drag-and-drop-mini-project/static/css/main.a84b52b4.css",
+    "main.js": "/drag-and-drop-mini-project/static/js/main.8b7a70b2.js",
+    "static/js/787.47485895.chunk.js": "/drag-and-drop-mini-project/static/js/787.47485895.chunk.js",
+    "index.html": "/drag-and-drop-mini-project/index.html",
+    "main.a84b52b4.css.map": "/drag-and-drop-mini-project/static/css/main.a84b52b4.css.map",
+    "main.8b7a70b2.js.map": "/drag-and-drop-mini-project/static/js/main.8b7a70b2.js.map",
+    "787.47485895.chunk.js.map": "/drag-and-drop-mini-project/static/js/787.47485895.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a84b52b4.css",
+    "static/js/main.8b7a70b2.js"
+  ]
+}
