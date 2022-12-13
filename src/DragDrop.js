@@ -36,13 +36,18 @@ function DragDrop() {
         setTree((tree) => [...tree, giftPictureList[0]]);
     }
 
+    function refreshPage() {
+        window.location.reload(false);
+    }
+
     return (
-        <div>
+        <div className="game-container">
             <div className='Gifts'>
                 {GiftPictures.map((giftPicture) => {
                     return <GiftPicture url={giftPicture.url} id={giftPicture.id} />;
                 })}
             </div>
+            <button onClick={refreshPage} className="christmas-tree">🎄</button>
             <div className="Tree" ref={drop}>
                 {tree.map((giftPicture) => {
                     return <GiftPicture url={giftPicture.url} id={giftPicture.id} />;
