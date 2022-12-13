@@ -15,6 +15,7 @@ function GiftPicture({ url, id }) {
                 className="gift-pictures"
                 src={url}
                 ref={drag}
+                style={{ border: isDragging ? "5px solid #fff" : "0px" }}
             />
         </div>
     )

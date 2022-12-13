@@ -50,6 +50,7 @@ code {
   width: 150px;
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .christmas-tree {
